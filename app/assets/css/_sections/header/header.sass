@@ -1,0 +1,47 @@
+.header
+	border-bottom: 4px solid #ccc
+	background-color: #FFF
+	
+	&__right, &__left
+		padding: 0
+
+	&__logo
+		text-align: center
+		background-color: #FFF
+		border-left: 2px solid $light-grey
+		border-right: 2px solid $light-grey
+		img
+			width: rem(179px)
+	&__about
+		font-weight: 300
+		font-size: rem(17px)
+	&__row
+		padding: rem(10px) rem(30px)
+		position: relative
+		&_upper
+			&::after
+				height: 1px
+		&_lower
+			background-color: $light-grey
+			padding: rem(20px) rem(30px)
+			&::after
+				top: 0
+		&_lower, &_upper
+			&::after
+				content: ''
+				display: block
+				position: absolute
+				bottom: 0
+				z-index: -1
+				left: -50%
+				right: -50%
+				background-color: $light-grey
+
+	&__info
+		font-weight: 400
+		font-size: rem(14px)
+
+	&__glyph
+		&:first-of-type
+			border-left: 1px solid $light-grey
+			border-right: 1px solid $light-grey

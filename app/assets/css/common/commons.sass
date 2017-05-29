@@ -1,16 +1,17 @@
 .title
 	color: #3d3d3d
 	font-weight: 800
-	font-size: 27px
+	font-size: rem(27px)
 
 .uppercase
 	text-transform: uppercase
 
 .btn
+	font-size: rem(14px)
 	color: #fff
 	background-color: $pink
 	transition: background-color 300ms
-	padding: 10px 30px
+	padding: rem(10px) rem(30px)
 	&:hover, &:active
 		background-color: $red
 
@@ -29,3 +30,28 @@
 		background-color: #black
 		&:hover, &:active
 			background-color: #grey
+
+.badge
+	font-size: rem(14px)
+	background-color: $grey
+	display: inline-block
+	width: 100%
+	padding: 2px 0
+	vertical-align: middle
+	position: relative
+
+	&__left
+		position: absolute
+		left: 0
+		top: 0
+		bottom: 0
+		
+	&__icon
+			
+	&__text
+		text-align: center
+	& *
+		color: #fff
+		display: inline-block
+		vertical-align: middle
+		
