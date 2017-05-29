@@ -1,0 +1,50 @@
+html
+	box-sizing: border-box
+	font-size: 16px
+	+responsive('laptop')
+		font-size: 15px
+	+responsive('tablet')
+		font-size: 14px
+		
+	+responsive('phone')
+		font-size: 13px
+	+responsive('phone-xs')
+		font-size: 12px
+
+*, *::before, *::after
+	box-sizing: inherit
+
+html, body
+	width: 100%
+
+body
+	font-family: 'Open Sans', sans-serif;
+	
+html, body, ul, li, p, h1, h2, h3, h4, h5, img
+	margin: 0
+	padding: 0
+	font-weight: normal
+
+ul, li
+	list-style: none
+	font-size: 14px
+
+a, a:hover, a:visited, a:active, a:link
+	text-decoration: none
+textarea
+	resize: none
+
+table
+	// width: 100%
+	& *
+		float: none
+input
+	border-radius: 0
+	-webkit-appearance: none
+	
+.section
+	padding: rem(45px) 0
+.section:nth-of-type(2n)
+	background-color: #fafafa
+.wrapper
+	overflow: hidden

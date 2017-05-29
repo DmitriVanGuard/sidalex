@@ -1,0 +1,73 @@
+.input, .btn
+	outline: none
+	font-size: rem(17px)
+
+.input
+	padding: rem(7px) rem(15px)
+	border: 1px solid $blue
+	width: 100%
+	&_rounded
+		border-radius: rem(40px)
+
+.btn
+	display: inline-block
+	text-align: center
+	width: 100%
+	border: 0
+	padding: rem(7px) rem(7px)
+	color: #fff
+	background-color: $blue
+	font-weight: 300
+
+	&_rounded
+		border-radius: rem(40px)
+
+	&:hover
+		color: #fff
+
+.btn-next
+	display: inline-block
+	text-align: center
+	text-transform: capitalize
+	padding: rem(5px) rem(10px)
+	border: 1px solid $blue
+	color: $blue
+
+.telephone
+	display: inline-block
+	font-size: rem(26px)
+	color: $blue
+	font-weight: 300
+
+.uppercase
+	text-transform: uppercase
+
+.title-block
+	text-align: center
+	margin-bottom: rem(50px)
+
+.title
+	display: inline-block
+	text-transform: uppercase
+	font-size: rem(30px)
+	padding: rem(8px) rem(60px)
+	position: relative
+	font-weight: 600
+	&::after, &::before
+		position: absolute
+		content: ''
+		display: inline-block
+		width: 35%
+		height: 85%
+	&::before
+		top: 0
+		left: 0
+		border-top: 2px solid $blue
+		border-left: 2px solid $blue
+	&::after
+		bottom: 0
+		right: 0
+		border-bottom: 2px solid $blue
+		border-right: 2px solid $blue
+
+
