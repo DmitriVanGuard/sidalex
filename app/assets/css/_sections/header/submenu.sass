@@ -1,0 +1,38 @@
+.submenu
+	position: absolute
+	left: -999px
+	z-index: -1
+	box-shadow: 0 0 3px #888
+	transition: height 300ms, margin-top 300ms
+	overflow: hidden
+	+responsive('tablet')
+		z-index: 1
+		height: 0
+		position: static
+	+responsive('phone')
+		z-index: 1
+		height: 0
+		position: static
+	+responsive('phone-xs')
+		z-index: 1
+		height: 0
+		position: static
+
+	&__item
+		padding: rem(10px) rem(20px)
+		background-color: #FFF
+		box-shadow: 2px 0 4px -2px #888 inset // hack!
+		+responsive('tablet')
+			box-shadow: 1px 0 4px #888
+		+responsive('phone')
+			box-shadow: 1px 0 4px #888
+		+responsive('phone-xs')
+			box-shadow: 1px 0 4px #888
+		&:hover
+			background-color: $blue
+			color: #fff
+			.submenu__link
+				color: #fff
+	
+	&__link
+		color: $dark-blue

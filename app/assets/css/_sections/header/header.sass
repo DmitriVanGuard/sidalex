@@ -1,0 +1,104 @@
+.header
+	position: relative
+	z-index: 4
+	+responsive('tablet')
+		box-shadow: 0 1px 9px #888
+	+responsive('phone')
+		background-color: lighten($blue, 20%)
+		background-color: $dark-blue
+	+responsive('phone-xs')
+		background-color: lighten($blue, 20%)
+		background-color: $dark-blue
+
+	&__right
+		text-align: right
+
+	&__content
+		padding: rem(14px)
+		position: relative
+		display: flex
+		align-items: center
+		+responsive('tablet')
+			display: block
+		+responsive('phone')
+			display: block
+		+responsive('phone-xs')
+			display: block
+
+	&__company
+		+responsive('tablet')
+			text-align: center
+
+	&__logo
+		display: inline-block
+		vertical-align: middle
+		margin-right: rem(10px)
+		width: rem(73px)
+		img
+			max-width: 100%
+		+responsive('tablet')
+			margin-top: -5px
+			margin-bottom: -5px
+
+	&__title
+		color: $blue
+		display: inline-block
+		text-transform: uppercase
+		font-size: rem(30px)
+		font-weight: 600
+		vertical-align: middle
+		+responsive('phone')
+			color: #fff
+		+responsive('phone-xs')
+			font-size: rem(28px)
+			color: #fff
+
+	&__center-block
+		padding: 3px 0
+
+	&__input
+		position: relative
+		padding-right: 10%
+
+	&__search
+		margin-bottom: 10px
+		position: relative
+		&_btn
+			display: inline-block
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			z-index: 1
+			left: 90%
+			border-left: 1px solid $blue
+			color: $blue
+			text-align: center
+			+responsive('tablet')
+				left: 85%
+			&::before
+				content: ''
+				display: inline-block
+				height: 100%
+				vertical-align: middle
+		&_icon
+			vertical-align: middle
+
+	&__tel
+		margin-bottom: rem(16px)
+
+	&__hamb
+		position: fixed
+		top: 21px
+		left: calc(100% - 40px)
+		color: $blue
+		font-size: 30px
+		z-index: 5
+		+responsive('phone-xs')
+			top: 18px
+		+responsive('tablet')
+			left: calc(100% - 45px)
+			top: 38px
+
+#hamb:checked ~ .nav
+	right: 100%

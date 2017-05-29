@@ -138,6 +138,43 @@ gulp.task('watch', function() {
 
 });
 
+gulp.task('build:svg', function () {
+  return gulp.src(paths.images.svg)
+  // минифицируем svg
+    .pipe($.svgmin({
+        js2svg: {
+          pretty: true
+        }
+  }))
+  // удалить все атрибуты fill, style and stroke в фигурах
+    .pipe($.cheerio({
+        run: function ($) {
+          $('[fill]').removeAttr('fill');
+          $('[stroke]').removeAttr('stroke');
+          $('[style]').removeAttr('style');
+          $('[fill-rule]').removeAttr('fill-rule');
+          $('[clip-rule]').removeAttr('clip-rule');
+        },
+        parserOptions: {
+          xmlMode: true
+        }
+  }))
+  // cheerio плагин заменит, если появилась, скобка '&gt;', на нормальную.
+    .pipe($.replace('&gt;', '>'))
+  // build svg sprite
+    .pipe($.svgSprite({
+        mode: {
+          symbol: {
+            sprite: "../icons/sprite.svg",
+            /*example: {
+              dest: '../tmp/spriteSvgDemo.html' // демо html
+            }*/
+          }
+        }
+  }))
+    .pipe(gulp.dest(paths.images.distDev));
+});
+
 gulp.task('clean', function() {
   return del('distDev');
 });
@@ -145,7 +182,7 @@ gulp.task('clean', function() {
 gulp.task('build', gulp.series(
     'clean',
     'fonts',
-    gulp.parallel('styles', 'styles:vendor', 'images', 'build:pug'))
+    gulp.parallel('styles', 'styles:vendor', 'images', 'build:svg', 'build:pug'))
 );
 
 gulp.task('dev',

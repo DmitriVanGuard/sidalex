@@ -1,0 +1,45 @@
+.chain
+	text-align: right
+	+responsive('tablet')
+		position: absolute
+		top: 10px
+		text-align: center
+		padding: 0
+	+responsive('phone')
+		position: absolute
+		top: 10px
+		text-align: center
+		padding: 0
+	+responsive('phone-xs')
+		position: absolute
+		top: 10px
+		text-align: center
+		padding: 0
+
+	&__item
+		display: inline-block
+		padding: rem(12px) 0
+		+responsive('desktop')
+			padding: rem(15px) 0
+		&::after
+			content: '\00bb'
+			display: inline-block
+			margin-right: 2px
+			margin-left: 6px
+			vertical-align: top
+			color: #fff
+		&:last-child
+			&::after
+				display: none
+	&__link
+		color: #fff
+		font-size: rem(14px)
+
+		+responsive('phone')
+			font-size: rem(16px)
+		+responsive('phone-xs')
+			font-size: rem(16px)
+
+		&_active
+			color: $dark-blue
+
