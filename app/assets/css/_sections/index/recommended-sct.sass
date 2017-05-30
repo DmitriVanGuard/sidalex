@@ -1,18 +1,21 @@
 .recommended-sct
 	&__head
 		@extend %justify-content
+		margin-bottom: 0
 	&__col
 		display: inline-block
 	&__link
 		color: $black
 		font-weight: 800
-		// text-align: center
 		font-size: rem(20px)
 		&_active
 			color: $pink
+			text-decoration: underline !important
 	&__list
 		padding-left: 10px
 		padding-right: 10px 
+		width: 1130px
+		height: 365px
 		@extend %justify-content
 
 	&__item
