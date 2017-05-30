@@ -22,18 +22,27 @@ section.itemcard-sct
 			.itemcard-sct__characteristics.col-lg-20
 				.itemcard-sct__settings
 					.itemcard-sct__choice.col-lg-12
-						h3.itemcard-sct__text.itemcard-sct__label.itemcard-sct__size Pазмер
+						h3.itemcard-sct__text.itemcard-sct__label.itemcard-sct__label_size Pазмер
 						select.itemcard-sct__select(name="")
 							option.itemcard-sct__option(value="", label="36")
 
 					.itemcard-sct__choice.col-lg-12
-						h3.itemcard-sct__text.itemcard-sct__label.itemcard-sct__color Цвет
+						h3.itemcard-sct__text.itemcard-sct__label.itemcard-sct__label_color Цвет
 						select.itemcard-sct__select(name="")
 							option.itemcard-sct__option(value="red", label="red")
 					.itemcard-sct__choice.col-lg-24
-						h3.itemcard-sct__text.itemcard-sct__label.itemcard-sct__color Рейтинг
-						select.itemcard-sct__select(name="")
-							option.itemcard-sct__option(value="red", label="star")
+						h3.itemcard-sct__text.itemcard-sct__label.itemcard-sct__label_rating Рейтинг
+						.itemcard-sct__rating.catalog-sct__rating
+							a.catalog-sct__star.itemcard-sct__star
+								i(class="fa fa-star-half-o", aria-hidden="true")
+							a.catalog-sct__star.itemcard-sct__star
+								i(class="fa fa-star-half-o", aria-hidden="true")
+							a.catalog-sct__star.itemcard-sct__star
+								i(class="fa fa-star-half-o", aria-hidden="true")
+							a.catalog-sct__star.itemcard-sct__star
+								i(class="fa fa-star-half-o", aria-hidden="true")
+							a.catalog-sct__star.itemcard-sct__star
+								i(class="fa fa-star-half-o", aria-hidden="true")
 
 				table.itemcard-sct__table
 					caption.itemcard-sct__caption Характеристики:
@@ -57,8 +66,8 @@ section.itemcard-sct
 
 			.itemcard-sct__row
 				h3.itemcard-sct__subtitle.itemcard-sct__pricetag.uppercase Цена:
-				h3.itemcard-sct__subtitle.itemcard-sct__price.price P 4200
-				h3.itemcard-sct__subtitle.itemcard-sct__discount.discount P 5600
+				h3.itemcard-sct__subtitle.itemcard-sct__price.price ₽ 4200
+				h3.itemcard-sct__subtitle.itemcard-sct__discount.discount ₽ 5600
 
 			a.itemcard-sct__btn.btn.btn_pink.col-lg-11(href="") Добавить в корзину
 			a.itemcard-sct__btn.btn.btn_pink.col-lg-11.col-lg-offset-2(href="") Купить
