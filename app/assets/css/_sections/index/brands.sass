@@ -1,0 +1,30 @@
+.brands
+	position: relative
+	padding-bottom: rem(50px)
+
+	&__visible
+		@extend %clearfix
+	&__title
+		margin-bottom: rem(30px)
+
+	&__list
+		font-size: 0
+	&__item
+		display: inline-block
+		padding: 15px
+		text-align: center
+		border: 1px solid $black
+		width: rem(160px)
+		margin-right: rem(30px)
+		&:last-child
+			margin-right: 0
+	&__pic
+		display: inline-block
+		img
+			max-width: rem(90px)
+			opacity: 0.5
+	&__control
+		left: 49.9% !important
+	&__toggle
+		&:first-child
+			margin-right: rem(30px) !important
