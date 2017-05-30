@@ -1,4 +1,7 @@
 .recommended-sct
+	padding-bottom: rem(50px)
+	position: relative
+
 	&__head
 		@extend %justify-content
 		margin-bottom: 0
@@ -11,14 +14,40 @@
 		&_active
 			color: $pink
 			text-decoration: underline !important
-	&__list
+	&__visible
 		padding-left: 10px
 		padding-right: 10px 
-		width: 1130px
-		height: 365px
-		@extend %justify-content
+		width: 1130px // js
+		overflow: hidden
+
+	&__list
+		padding: 0
+		width: 2130px //js
+		height: 320px //js
+		// @extend %justify-content
 
 	&__item
-		float: none
+		height: rem(320px)
+		width: rem(235px)
+		margin: 0 rem(56px) 0 0
 		padding: 0
-		margin-bottom: 0
+
+		&:last-child
+			margin-right: 0
+	
+	&__control
+		position: absolute
+		@extend %centering
+		top: 94%
+		left: 50.35%
+	&__toggle
+		display: inline-block
+		color: $dark-grey
+		cursor: pointer
+		font-size: rem(35px)
+		transition: color 300ms
+		&:hover
+			color: $black
+		&:first-child
+			transform: rotateY(180deg)
+			margin-right: rem(62px)

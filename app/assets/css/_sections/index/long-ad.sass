@@ -1,0 +1,16 @@
+.long-ad
+	&__content
+		height: rem(350px)
+		position: relative
+	
+	&__pic
+		height: 100%
+		background-repeat: no-repeat
+		img
+			max-height: 100%
+			position: absolute
+			left: -200%
+			visibility: hidden
+	&__offer
+		position: absolute
+		@extend %centering
