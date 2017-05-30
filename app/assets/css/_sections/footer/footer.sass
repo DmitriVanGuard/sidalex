@@ -1,7 +1,8 @@
 .footer
 	background-color: $light-grey
 	color: $black
-	
+	&__title
+		font-size: rem(26px)
 	&__row
 		position: relative
 		padding: rem(18px) 0
@@ -19,7 +20,7 @@
 	&__col
 		text-align: center
 	&__link
-		color: $dark-grey
+		color: $black
 		font-size: rem(17px)
 		&:hover
 			color: $pink
@@ -33,5 +34,15 @@
 		width: rem(103px)
 		img
 			max-width: 100%
-	
+	&__socials
+		display: inline-block
+		background-color: $dark-grey
+		width: 25px
+		height: 25px
+		margin-right: 5px
+		@extend %v-align
+		&:last-child
+			margin-right: 0
+		i
+			color: $light-grey
 
