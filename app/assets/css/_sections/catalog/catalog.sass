@@ -1,0 +1,34 @@
+.catalog
+	&__row
+		margin-bottom: rem(20px)
+	&__title
+		text-align: center
+		margin: 0
+	
+	&__right
+		@extend %justify-content
+	&__settings
+		display: inline-block
+		font-size: rem(14px)
+		padding: rem(8px) rem(20px)
+		border: 1px solid $grey
+		& > span
+			&::after
+				content: ':'
+				display: inline-block
+				margin: 0 5px 0 2px
+	&__select
+		background-color: #FFF
+		outline: none
+		position: relative
+		border: 0
+
+		// &::after
+		// 	content: 'v'
+		// 	display: inline-block
+		// 	position: absolute
+		// 	@extend %centering
+		// 	left: 80%
+
+	&__option
+		box-shadow: none

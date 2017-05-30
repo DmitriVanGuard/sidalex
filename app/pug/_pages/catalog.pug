@@ -1,0 +1,12 @@
+extends ../main
+
+block vars
+	-CATALOG = true
+
+block content
+	.container
+		.row.content.catalog
+			include ../_parts/chain
+			include ../_parts/catalog/catalog-head
+			include ../_parts/side-catalog
+			include ../_parts/catalog-sct

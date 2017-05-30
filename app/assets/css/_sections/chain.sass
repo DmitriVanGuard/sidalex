@@ -1,0 +1,18 @@
+.chain
+	margin-bottom: rem(25px)
+	&__item
+		display: inline-block
+		&::after
+		 content: '\/'
+		 display: inline-block
+		 margin: 0 1px 0 4px
+
+		& > a
+			color: $black
+
+		&:last-child
+			&::after
+				display: none
+			& > a
+				color: $pink
+

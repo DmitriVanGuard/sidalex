@@ -1,0 +1,74 @@
+.ad-list
+	height: 300px
+	&__item
+		display: inline-block
+
+	&__content
+		position: relative
+		height: 100%
+
+	&__right
+		height: 100%
+		font-size: rem(26px)
+
+	&__left
+		font-size: rem(19px)
+		height: 48%
+		&:nth-child(2)
+			margin: 0 0 1.09%
+
+	&__pic
+		height: 100%
+		@extend %picture
+		overflow: hidden
+		img
+			display: none
+
+	&__offer
+		position: absolute
+		top: 10%
+		right: 10%
+		bottom: 10%
+		left: 10%
+		&_alignright
+			text-align: right
+			& .ad-list__title
+				padding: 5px 0 5px 10px
+
+
+
+	&__title, &__discount, &__subtitle, &__btn
+		color: #fff
+	&__title, &__discount
+		font-weight: 800
+	
+	&__title
+		display: inline-block
+		padding: 5px 10px 5px 0
+		font-size: 1.1em
+		border-bottom: 1px solid #fff
+		&_black
+			color: #000
+			border-bottom: 1px solid #000
+	&__subtitle
+		font-weight: 300
+		color: $light-grey
+		font-size: 0.65em
+		&_black
+			color: #000
+
+	&__btn
+		color: $dark-grey
+		font-size: rem(13px)
+		&_white
+			color: #fff
+			border: 1px solid #fff
+		&_dark
+			color: $black
+			border: 1px solid $black
+		&_bold
+			font-weight: 600
+		&_underline
+			text-decoration: underline
+		&_naked
+			border: none

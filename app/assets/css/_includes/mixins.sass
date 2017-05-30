@@ -49,6 +49,16 @@
 		display: table
 		clear: both
 
+%v-align
+	& > *
+		vertical-align: middle
+	&::after
+		content: ""
+		display: inline-block
+		width: 0
+		height: inherit
+		vertical-align: middle
+
 %justify-content
 	margin-bottom: -20px
 	text-align: justify

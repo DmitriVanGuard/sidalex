@@ -2,23 +2,27 @@
 	color: #3d3d3d
 	font-weight: 800
 	font-size: rem(27px)
+	margin-bottom: rem(10px)
 
 .uppercase
 	text-transform: uppercase
 
 .btn
+	display: inline-block
 	font-size: rem(14px)
 	color: #fff
-	background-color: $pink
+	text-align: center
 	transition: background-color 300ms
-	padding: rem(10px) rem(30px)
-	&:hover, &:active
-		background-color: $red
-
+	&_pink
+		background-color: $pink
+		&:hover, &:active
+			background-color: $red
+	&_padding
+		padding: rem(10px) rem(20px)
 	&_thin
-		color: #pink
-		border: 1px solid #pink
-		padding: 5px 40px
+		color: $pink
+		border: 1px solid $pink
+		padding: rem(5px) rem(20px)
 
 		&:hover, &:active
 			color: #fff
@@ -27,9 +31,9 @@
 		&:active
 			background-color: $red
 	&_fat
-		background-color: #black
+		background-color: $black
 		&:hover, &:active
-			background-color: #grey
+			background-color: $grey
 
 .badge
 	font-size: rem(14px)
@@ -39,19 +43,29 @@
 	padding: 2px 0
 	vertical-align: middle
 	position: relative
+	margin-bottom: 7px
 
 	&__left
 		position: absolute
 		left: 0
 		top: 0
 		bottom: 0
-		
+		right: 90%
+		background-color: #545454
 	&__icon
 			
 	&__text
 		text-align: center
-	& *
+		color: #fff
+		font-size: rem(14px)
+	& > *
 		color: #fff
 		display: inline-block
 		vertical-align: middle
 		
+.price
+	color: $pink
+.discount
+	text-decoration: line-through
+	color: $dark-grey
+

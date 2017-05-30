@@ -1,0 +1,42 @@
+.slider
+	&__visible
+		position: relative
+
+	&__toggle
+		display: inline-block
+		position: absolute
+		@extend %centering
+		color: #fff
+		font-size: rem(18px)
+		padding: rem(9px) rem(16px)
+		background-color: rgba($dark-grey, 0.9)
+
+		&_left
+			left: 3%
+		&_right
+			left: 97%
+
+	&__item
+		padding: 7% 7% 10%
+		@extend %picture
+
+	&__title
+		margin-bottom: rem(20px)
+		font-size: rem(30px)
+		color: #000
+		line-height: 0.9
+		&:first-child
+			margin-bottom: 0
+		&_bold
+			font-size: rem(40px)
+			font-weight: 600
+	&__text
+		&_thin
+			font-weight: 300
+	&__btn
+		color: $black
+		border: 1px solid $black
+		margin-top: rem(20px)
+		&:hover
+			background-color: $black
+			color: #fff

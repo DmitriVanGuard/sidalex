@@ -1,0 +1,25 @@
+nav.chain
+	ul.chain__list
+		if INDEX
+			li.chain__item
+				a.chain__link(href="") Главная
+		else if CATALOG
+			li.chain__item
+				a.chain__link(href="") Главная
+			li.chain__item
+				a.chain__link(href="") Мужская обувь
+			li.chain__item
+				a.chain__link(href="") Каталог
+		else if ITEMCARD
+			li.chain__item
+				a.chain__link(href="") Главная
+			li.chain__item
+				a.chain__link(href="") Каталог
+			li.chain__item
+				a.chain__link(href="") Товар 1
+
+		else if BRAND
+			li.chain__item
+				a.chain__link(href="") Главная
+			li.chain__item
+				a.chain__link(href="") Брэнд

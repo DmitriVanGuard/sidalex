@@ -4,4 +4,12 @@ block vars
 	-INDEX = true
 
 block content
-	//- include
+	.container
+		.content.index
+			include ../_parts/index/slider
+			.index__ads
+				include ../_parts/index/ad-list
+			.index__catalog
+				include ../_parts/catalog/catalog-head
+				include ../_parts/side-catalog
+				include ../_parts/catalog-sct

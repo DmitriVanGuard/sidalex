@@ -1,0 +1,86 @@
+.itemcard-sct
+	background-color: #F8F8F8
+	@extend %clearfix
+	padding: 20px 10px
+
+	&__title
+		margin-bottom: rem(20px)
+
+	&__item
+		display: inline-block
+		&_active
+			margin-bottom: 2.5%
+			& .itemcard-sct__pic
+				height: 350px
+
+	&__pic
+		overflow: hidden
+		img
+			min-width: 100%
+			max-width: 100%
+
+	&__characteristics
+		padding: 0
+
+	&__subtitle
+		font-weight: 600
+		font-size: 18px
+		display: inline-block
+		margin-right: 10%
+
+		&_bold
+			font-weight: 800
+		&_mb
+			margin-bottom: rem(40px)
+	&__settings
+		@extend %clearfix
+		margin-bottom: rem(25px)
+		
+	&__choice
+		padding: 0
+		display: inline-block
+		margin-bottom: rem(15px)
+		&:last-child
+			margin-bottom: 0
+
+	&__label
+		margin-right: 10%
+		font-weight: bold
+		display: inline-block
+	
+	&__select
+		background-color: $light-grey
+
+	&__caption
+		text-align: left
+		font-weight: bold
+		margin-bottom: rem(10px)
+
+	&__tablecell
+		width: 50%
+		padding-bottom: 5px
+		&:first-child::after
+			display: inline-block
+			content: ':'
+		&:last-child
+			padding-bottom: 0
+		
+	&__table
+		margin-bottom: 13%
+
+	&__pricetag
+
+	&__price
+		color: $pink
+	
+	&__description
+		margin-top: rem(50px)
+
+
+	&__text
+		font-size: 1rem
+
+	&__btn
+		margin-top: 13%
+		display: inline-block
+		padding: 5px 0
