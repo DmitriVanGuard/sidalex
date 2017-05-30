@@ -1,6 +1,6 @@
 section.catalog-sct
-	ul.catalog-sct__list.col-lg-offset-5
-		li.catalog-sct__item.catalog-sct__item_sale
+	ul.catalog-sct__list.catalog-sct__list_column.col-lg-offset-5
+		li.catalog-sct__item.catalog-sct__item_width.catalog-sct__item.catalog-sct__item_width_sale
 			.catalog-sct__pic
 				img(src="img/content/boot.jpg", alt="")
 			.catalog-sct__interactive
@@ -19,7 +19,7 @@ section.catalog-sct
 						.catalog-sct__rating
 				a.catalog-sct__btn.btn.btn_pink.btn_padding(href="") Купить в 1 клик
 				a.catalog-sct__btn.btn.btn_pink.btn_padding(href="") Добавить в корзину
-		li.catalog-sct__item
+		li.catalog-sct__item.catalog-sct__item_width
 			.catalog-sct__pic
 				img(src="img/content/boot.jpg", alt="")
 			.catalog-sct__interactive
@@ -38,7 +38,7 @@ section.catalog-sct
 						.catalog-sct__rating
 				a.catalog-sct__btn.btn.btn_pink.btn_padding(href="") Купить в 1 клик
 				a.catalog-sct__btn.btn.btn_pink.btn_padding(href="") Добавить в корзину
-		li.catalog-sct__item
+		li.catalog-sct__item.catalog-sct__item_width
 			.catalog-sct__pic
 				img(src="img/content/boot.jpg", alt="")
 			.catalog-sct__interactive
@@ -57,7 +57,7 @@ section.catalog-sct
 						.catalog-sct__rating
 				a.catalog-sct__btn.btn.btn_pink.btn_padding(href="") Купить в 1 клик
 				a.catalog-sct__btn.btn.btn_pink.btn_padding(href="") Добавить в корзину
-		li.catalog-sct__item
+		li.catalog-sct__item.catalog-sct__item_width
 			.catalog-sct__pic
 				img(src="img/content/boot.jpg", alt="")
 			.catalog-sct__interactive
@@ -76,7 +76,7 @@ section.catalog-sct
 						.catalog-sct__rating
 				a.catalog-sct__btn.btn.btn_pink.btn_padding(href="") Купить в 1 клик
 				a.catalog-sct__btn.btn.btn_pink.btn_padding(href="") Добавить в корзину
-		li.catalog-sct__item
+		li.catalog-sct__item.catalog-sct__item_width
 			.catalog-sct__pic
 				img(src="img/content/boot.jpg", alt="")
 			.catalog-sct__interactive
@@ -97,4 +97,4 @@ section.catalog-sct
 				a.catalog-sct__btn.btn.btn_pink.btn_padding(href="") Добавить в корзину
 
 //- 
-	ul.catalog-sct__list>(li.catalog-sct__item>((.catalog-sct__pic>img)+(.catalog-sct__interactive>h3.catalog-sct__text.catalog-sct__name+h3.catalog-sct__text.catalog-sct__size+(select.catalog-sct__select>option.catalog-sct__option)+h4.catalog-sct__text.catalog-sct__price+h4.catalog-sct__text.catalog-sct__discount+.catalog-sct__rating+a.btn.btn_pink.btn_padding{Купить в 1 клик}+a.btn.btn_pink.btn_padding{Добавить в корзину})))*3
+	ul.catalog-sct__list>(li.catalog-sct__item.catalog-sct__item_width>((.catalog-sct__pic>img)+(.catalog-sct__interactive>h3.catalog-sct__text.catalog-sct__name+h3.catalog-sct__text.catalog-sct__size+(select.catalog-sct__select>option.catalog-sct__option)+h4.catalog-sct__text.catalog-sct__price+h4.catalog-sct__text.catalog-sct__discount+.catalog-sct__rating+a.btn.btn_pink.btn_padding{Купить в 1 клик}+a.btn.btn_pink.btn_padding{Добавить в корзину})))*3

@@ -2,13 +2,15 @@
 	background-color: #F8F8F8
 	&__list
 		padding: rem(15px) rem(20px)
-		column-count: 3
-		column-gap: 2em
+		&_column
+			column-count: 3
+			column-gap: 2em
 
 	&__item
 		display: inline-block
 		margin-bottom: 2em
-		width: 100%
+		&_width
+			width: 100%
 
 		&_sale > .catalog-sct__pic
 			position: relative
@@ -43,8 +45,6 @@
 		display: inline-block
 		font-size: 14px
 		font-weight: 600
-
-
 
 	&__select
 		background-color: $light-grey
