@@ -30,6 +30,8 @@
 		padding: rem(10px) rem(30px)
 		position: relative
 		&_upper
+			padding-top: 0
+			padding-bottom: 0
 			&::after
 				height: 1px
 		&_lower
@@ -52,7 +54,33 @@
 		font-weight: 600
 		font-size: rem(14px)
 
+	&__flex
+		display: flex
+		align-items: center
 	&__glyph
-		&:first-of-type
+		padding: rem(15px) rem(18px)
+		display: inline-block
+		color: #000
+		transition: background-color 300ms
+		position: relative
+		&:hover
+			background-color: $light-grey
+			color: #fff
+		&_border
 			border-left: 1px solid $light-grey
 			border-right: 1px solid $light-grey
+	&__count
+		display: inline-block
+		background-color: $black
+		border-radius: 50%
+		font-size: rem(12px)
+		font-weight: 600
+		position: absolute
+		color: #fff
+		text-align: center
+		vertical-align: middle
+		@extend %v-align
+		width: 17px
+		height: 17px
+		top: 10%
+		left: 50%

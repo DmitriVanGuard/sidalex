@@ -6,15 +6,18 @@ header.header
 					img(src="img/content/logo.png", alt="Sidalex logo")
 			.col-lg-18.header__right
 				.header__row.header__row_upper
-					.row
-						.col-lg-9
+					.row.header__flex
+						.col-lg-11
 							h2.header__info.header__time
 								|Часы работы: 8:00 - 19:00 Круглосуточно
-						.col-lg-6
+						.col-lg-7
 							h2.header__info.header__telephone
 								|Телефон: +7 987 654 32 11
-						.col-lg-1.header__glyph
-						.col-lg-1.header__glyph
+						a.header__glyph.header__glyph_border.col-lg-offset-5(href="")
+							i(class="fa fa-search" aria-hidden="true")
+						a.header__glyph.header__glyph_shop(href="")
+							span.header__count.header__count_active 1
+							i(class="fa fa-search" aria-hidden="true")
 				.header__row.header__row_middle
 					h1.header__about.uppercase
 						|Дисконт-центр кроссовок и брендовой обуви с доставкой по москве и россии
