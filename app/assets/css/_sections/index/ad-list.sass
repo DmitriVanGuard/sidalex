@@ -63,12 +63,26 @@
 		&_white
 			color: #fff
 			border: 1px solid #fff
-		&_dark
+			&:hover
+				background-color: #FFF
+				color: $black
+		&_black
 			color: $black
 			border: 1px solid $black
+			&:hover
+				color: #fff
+				background-color: $black
 		&_bold
 			font-weight: 600
 		&_underline
 			text-decoration: underline
 		&_naked
+			color: #fff
 			border: none
+			padding: 0
+			&:hover
+				background-color: transparent
+		&_bottom
+			position: absolute
+			right: 0
+			bottom: 0
