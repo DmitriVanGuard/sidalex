@@ -1,4 +1,6 @@
 .long-ad
+	margin-left: rem(-15px)
+	margin-right: rem(-15px)
 	&__content
 		height: rem(350px)
 		position: relative
@@ -11,6 +13,34 @@
 			position: absolute
 			left: -200%
 			visibility: hidden
-	&__offer
+	&__gradient
+		padding: 15px
 		position: absolute
 		@extend %centering
+		width: 50%
+		left: 73%
+		background: #6C3F88
+		background: radial-gradient(circle at top left, #6C3F88, rgba(#6C3F88, 0) 50%)
+	&__offer
+		text-align: center
+		background-color: #FFF
+		padding: rem(25px) rem(30px)
+		border-width: 10px
+		// border-style: solid
+
+	&__title
+		font-size: rem(40px)
+		color: $pink
+
+	&__subtitle
+		font-size: rem(23px)
+		font-weight: 300
+		margin-bottom: rem(20px)
+
+	&__selected
+		color: $pink
+		margin-right: rem(3px)
+
+	&__btn
+		padding: rem(10px) rem(30px)
+		font-size: rem(18px)
