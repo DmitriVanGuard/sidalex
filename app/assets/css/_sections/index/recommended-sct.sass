@@ -39,13 +39,17 @@
 		position: absolute
 		@extend %centering
 		top: 94%
-		left: 50.35%
+		left: 49.2%
 	&__toggle
 		display: inline-block
-		color: $dark-grey
+		fill: $dark-grey
 		cursor: pointer
-		font-size: rem(35px)
-		transition: color 300ms
+		height: rem(35px)
+		width: rem(35px)
+		transition: fill 300ms
+		margin-right: rem(49px)
 		&:hover
-			color: $black
-			margin-right: rem(62px)
+			fill: $black
+		&:last-child
+			transform: rotateY(180deg)
+			margin-right: 0

@@ -1,9 +1,22 @@
 .nav
+	+responsive('tablet')
+		height: 100%
+	&__list
+		+responsive('tablet')
+			display: flex
+			height: 100%
+			flex-direction: column
+			justify-content: space-around
 	&__item
 		display: inline-block
 		margin-right: 10px
 		font-size: rem(14px)
 		font-weight: bolder
+		+responsive('tablet')
+			text-align: center
+			display: block
+			font-size: rem(18px)
+			margin-right: 0
 
 	&__link
 		color: $black
