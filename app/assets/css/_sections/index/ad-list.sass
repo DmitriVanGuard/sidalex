@@ -1,5 +1,11 @@
 .ad-list
 	height: 300px
+	+responsive('phone')
+		height: 100vh
+		min-height: 480px
+	+responsive('phone')
+		height: 100vh
+		min-height: 480px
 	&__item
 		display: inline-block
 
@@ -7,15 +13,25 @@
 		position: relative
 		height: 100%
 
-	&__right
+	&__left
 		height: 100%
 		font-size: rem(26px)
+		+responsive('phone')
+			height: 33.3%
+			margin-bottom: 1.09%
+		+responsive('phone-xs')
+			height: 33.3%
+			margin-bottom: 1.09%
 
-	&__left
+	&__right
 		font-size: rem(19px)
 		height: 48%
 		&:nth-child(2)
 			margin: 0 0 1.09%
+		+responsive('phone')
+			height: 33.3%
+		+responsive('phone-xs')
+			height: 33.3%
 
 	&__pic
 		height: 100%
@@ -34,8 +50,6 @@
 			text-align: right
 			& .ad-list__title
 				padding: 5px 0 5px 10px
-
-
 
 	&__title, &__discount, &__subtitle, &__btn
 		color: #fff

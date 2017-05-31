@@ -5,6 +5,12 @@
 		&_column
 			column-count: 3
 			column-gap: 2em
+			+responsive('phone')
+				column-count: 2
+				column-gap: 1em
+			+responsive('phone-xs')
+				column-count: 1
+				column-gap: 1em
 
 	&__item
 		display: inline-block

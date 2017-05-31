@@ -4,7 +4,13 @@
 	&__title
 		text-align: center
 		margin: 0
-	
+		+responsive('tablet')
+			margin-bottom: rem(15px)
+		+responsive('phone')
+			margin-bottom: rem(15px)
+		+responsive('phone-xs')
+			margin-bottom: rem(15px)
+
 	&__right
 		@extend %justify-content
 	&__settings

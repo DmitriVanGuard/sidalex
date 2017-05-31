@@ -1,6 +1,8 @@
 .recommended-sct
 	padding-bottom: rem(50px)
 	position: relative
+	+responsive('tablet')
+		padding-bottom: rem(30px)
 
 	&__head
 		@extend %justify-content
@@ -11,6 +13,8 @@
 		color: $black
 		font-weight: 800
 		font-size: rem(20px)
+		+responsive('tablet')
+			font-size: rem(15px)
 		&_active
 			color: $pink
 			text-decoration: underline !important
@@ -40,6 +44,8 @@
 		@extend %centering
 		top: 94%
 		left: 49.2%
+		+responsive('tablet')
+			top: 90%
 	&__toggle
 		display: inline-block
 		fill: $dark-grey
