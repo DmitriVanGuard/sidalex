@@ -1,8 +1,25 @@
 .nav
 	+responsive('tablet')
 		height: 100%
+		padding: 20px
+	+responsive('phone')
+		height: 100%
+		padding: 20px
+	+responsive('phone-xs')
+		height: 100%
+		padding: 20px
 	&__list
 		+responsive('tablet')
+			display: flex
+			height: 100%
+			flex-direction: column
+			justify-content: space-around
+		+responsive('phone')
+			display: flex
+			height: 100%
+			flex-direction: column
+			justify-content: space-around
+		+responsive('phone-xs')
 			display: flex
 			height: 100%
 			flex-direction: column
@@ -17,6 +34,17 @@
 			display: block
 			font-size: rem(18px)
 			margin-right: 0
+		+responsive('phone')
+			text-align: center
+			display: block
+			font-size: rem(18px)
+			margin-right: 0
+		+responsive('phone-xs')
+			text-align: center
+			display: block
+			font-size: rem(18px)
+			margin-right: 0
+
 
 	&__link
 		color: $black
