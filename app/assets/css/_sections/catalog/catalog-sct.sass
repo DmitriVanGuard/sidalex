@@ -35,6 +35,18 @@
 		@extend %clearfix
 		margin-bottom: rem(7px)
 
+		+responsive('phone-xs')
+			&:first-child
+				.catalog-sct__description
+					&_left, &_right
+						width: 100%
+						text-align: center
+
+	&__name
+		+responsive('phone-xs')
+			font-size: 15px
+			margin-bottom: 5px
+
 	&__description
 		&_left
 			float: left
@@ -49,8 +61,10 @@
 
 	&__text
 		display: inline-block
-		font-size: 14px
+		font-size: rem(14px)
 		font-weight: 600
+		+responsive('phone-xs')
+			font-size: 13px
 
 	&__select
 		background-color: $light-grey
@@ -66,19 +80,8 @@
 
 	&__price
 		margin-right: rem(25px)
-
-	&__discount
-		// position: relative
-	
-		// &::after
-		// 	content: ''
-		// 	display: inline-block
-		// 	position: absolute
-		// 	height: 1px
-		// 	background-color: $dark-grey
-		// 	@extend %centering
-		// 	left: -10px
-		// 	right: -10px
+		+responsive('phone-xs')
+			margin-right: 2px
 
 	&__btn
 		display: block
