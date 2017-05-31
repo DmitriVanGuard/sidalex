@@ -4,10 +4,12 @@
 
 	&__visible
 		@extend %clearfix
+		overflow: hidden
 	&__title
 		margin-bottom: rem(30px)
 
 	&__list
+		width: 2000px
 		font-size: 0
 	&__item
 		display: inline-block
@@ -16,6 +18,10 @@
 		margin-right: rem(31px)
 		&:last-child
 			margin-right: 0
+		+responsive('tablet')
+			margin-right: 3.48rem
+		+responsive('phone')
+			margin-right: 1.2675rem
 	&__link
 		padding: 15px
 		display: inline-block

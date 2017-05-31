@@ -31,7 +31,6 @@
 	&__visible
 		padding-left: 10px
 		padding-right: 10px 
-		width: 1130px // js
 		overflow: hidden
 
 	&__list
@@ -46,9 +45,11 @@
 		margin: 0 rem(53px) 0 0
 		padding: 0
 		
+		+responsive('laptop')
+			margin-right: 0.9rem
 		+responsive('phone')
-			width: 13.9rem
-			margin-right: rem(27px)
+			width: 15.9rem
+			margin-right: 3.7rem
 		&:last-child
 			margin-right: 0
 	
@@ -60,7 +61,7 @@
 		+responsive('tablet')
 			top: 90%
 		+responsive('phone')
-			top: 90%
+			top: 95%
 			left: 50%
 	&__toggle
 		display: inline-block
