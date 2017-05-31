@@ -5,15 +5,18 @@
 		&_column
 			column-count: 3
 			column-gap: 2em
-			+responsive('phone')
+			+responsive('tablet')
 				column-count: 2
+				column-gap: 2em
+			+responsive('phone')
+				column-count: 1
 				column-gap: 1em
 			+responsive('phone-xs')
 				column-count: 1
 				column-gap: 1em
 
 	&__item
-		display: inline-block
+		display: block
 		margin-bottom: 2em
 		&_width
 			width: 100%
@@ -35,14 +38,17 @@
 		@extend %clearfix
 		margin-bottom: rem(7px)
 
-		+responsive('phone-xs')
-			&:first-child
+		&:first-child
+			+responsive('phone-xs')
 				.catalog-sct__description
 					&_left, &_right
-						width: 100%
 						text-align: center
+						width: 100%
 
 	&__name
+		+responsive('phone')
+			font-size: 15px
+			margin-bottom: 5px
 		+responsive('phone-xs')
 			font-size: 15px
 			margin-bottom: 5px
@@ -63,6 +69,8 @@
 		display: inline-block
 		font-size: rem(14px)
 		font-weight: 600
+		+responsive('phone')
+			font-size: rem(16px)
 		+responsive('phone-xs')
 			font-size: 13px
 

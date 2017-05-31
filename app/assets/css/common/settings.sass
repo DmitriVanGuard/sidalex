@@ -57,3 +57,17 @@ input.text, input[type="text"], input[type="button"], input[type="submit"], sele
 
 .wrapper
 	overflow: hidden
+
+.option-box
+	position: relative
+	display: inline-block
+	&__chevron
+		color: $black
+		font-size: rem(14px)
+		z-index: 1
+		position: absolute
+		@extend %centering
+		top: 47%
+		left: calc(100% - 8px)
+	select
+		padding-right: 18px
