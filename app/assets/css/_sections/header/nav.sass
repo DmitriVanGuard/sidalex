@@ -36,23 +36,26 @@
 			text-align: center
 			display: block
 			font-size: rem(18px)
+			white-space: nowrap
 			margin-right: 0
 		+responsive('phone')
 			text-align: center
+			white-space: nowrap
 			display: block
 			font-size: rem(18px)
 			margin-right: 0
 		+responsive('phone-xs')
 			text-align: center
+			white-space: nowrap
 			display: block
 			font-size: rem(18px)
 			margin-right: 0
-
+		&_active
+			.nav__link
+				color: $pink
 
 	&__link
 		color: $black
-		&_active
-			color: $pink
 			
 		&:hover,&:active
 			color: $pink

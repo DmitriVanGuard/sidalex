@@ -19,20 +19,30 @@
 	&__item
 		padding: 7% 7% 10%
 		@extend %picture
+		+responsive('phone')
+			padding: 7% 10% 10%
+		+responsive('phone-xs')
+			padding: 7% 12% 10%
 
 	&__title
 		margin-bottom: rem(20px)
 		font-size: rem(30px)
 		color: #000
 		line-height: 0.9
+		+responsive('phone-xs')
+			font-size: rem(22px)
 		&:first-child
 			margin-bottom: 0
 		&_bold
 			font-size: rem(40px)
 			font-weight: 600
+			+responsive('phone-xs')
+				font-size: rem(32px)
 	&__text
 		&_thin
 			font-weight: 300
+			+responsive('phone-xs')
+				font-size: rem(15px)
 	&__btn
 		color: $black
 		border: 1px solid $black

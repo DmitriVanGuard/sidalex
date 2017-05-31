@@ -27,12 +27,12 @@ header.header
 				.header__row.header__row_lower
 					nav.nav
 						ul.nav__list
-							li.nav__item.uppercase
-								a.nav__link(href="", class=CATALOG || ITEMCARD ? 'nav__link_active' : '') Мужская обувь
+							li.nav__item.uppercase(class=INDEX || CATALOG || ITEMCARD ? 'nav__item_active' : '')
+								a.nav__link(href="") Мужская обувь
 							li.nav__item.uppercase
 								a.nav__link(href="") Женская обувь
-							li.nav__item.uppercase
-								a.nav__link(href="", class=BRAND ? 'nav__link_active' : '') Бренды
+							li.nav__item.uppercase(class=BRAND ? 'nav__item_active' : '')
+								a.nav__link(href="") Бренды
 							li.nav__item.uppercase
 								a.nav__link(href="") Доставка
 							li.nav__item.uppercase
