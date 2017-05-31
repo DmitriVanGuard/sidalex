@@ -3,12 +3,22 @@
 	position: relative
 	+responsive('tablet')
 		padding-bottom: rem(30px)
+	+responsive('phone')
+		padding-bottom: rem(10px)
+	+responsive('phone-xs')
+		padding-bottom: rem(10px)
 
 	&__head
 		@extend %justify-content
 		margin-bottom: 0
+		+responsive('phone')
+			text-align: center
 	&__col
 		display: inline-block
+		+responsive('phone')
+			display: block
+		+responsive('phone-xs')
+			display: block
 	&__link
 		color: $black
 		font-weight: 800
@@ -35,7 +45,10 @@
 		width: rem(235px)
 		margin: 0 rem(53px) 0 0
 		padding: 0
-
+		
+		+responsive('phone')
+			width: 13.9rem
+			margin-right: rem(27px)
 		&:last-child
 			margin-right: 0
 	
@@ -46,6 +59,9 @@
 		left: 49.2%
 		+responsive('tablet')
 			top: 90%
+		+responsive('phone')
+			top: 90%
+			left: 50%
 	&__toggle
 		display: inline-block
 		fill: $dark-grey
