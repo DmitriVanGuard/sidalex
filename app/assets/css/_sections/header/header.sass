@@ -71,6 +71,7 @@
 				right: 100%
 				bottom: 0
 				z-index: 5
+				padding: 0
 				box-shadow: 1px 0 8px $grey
 				overflow: hidden
 				&::after
@@ -85,10 +86,12 @@
 				box-shadow: 1px 0 8px $grey
 				overflow: hidden
 				padding: 0
+				overflow-y: auto
 				&::after
 					display: none
 			+responsive('phone-xs')
 				position: fixed
+				overflow-y: auto
 				top: 0
 				left: 0
 				right: 100%
