@@ -21,6 +21,12 @@
 		left: 73%
 		background: #6C3F88
 		background: radial-gradient(circle at top left, #6C3F88, rgba(#6C3F88, 0) 49%)
+		+responsive('phone')
+			left: 65%
+			width: 55%
+		+responsive('phone-xs')
+			left: 50%
+			width: 95%
 	&__offer
 		text-align: center
 		background-color: #FFF
@@ -31,11 +37,23 @@
 	&__title
 		font-size: rem(40px)
 		color: $pink
+		+responsive('tablet')
+			font-size: rem(32px)
+		+responsive('phone')
+			font-size: rem(32px)
+		+responsive('phone-xs')
+			font-size: rem(32px)
 
 	&__subtitle
 		font-size: rem(23px)
 		font-weight: 300
 		margin-bottom: rem(20px)
+		+responsive('tablet')
+			font-size: rem(18px)
+		+responsive('phone')
+			font-size: rem(18px)
+		+responsive('phone-xs')
+			font-size: rem(18px)
 
 	&__selected
 		color: $pink
@@ -44,3 +62,9 @@
 	&__btn
 		padding: rem(10px) rem(30px)
 		font-size: rem(18px)
+		+responsive('tablet')
+			font-size: rem(14px)
+		+responsive('phone')
+			font-size: rem(14px)
+		+responsive('phone-xs')
+			font-size: rem(14px)
