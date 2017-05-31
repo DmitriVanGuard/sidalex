@@ -18,6 +18,15 @@
 		font-size: rem(14px)
 		padding: rem(8px) rem(20px)
 		border: 1px solid $grey
+		+responsive('phone')
+			width: 48%
+			margin-bottom: 10px
+			text-align: center
+		+responsive('phone-xs')
+			width: 48%
+			margin-bottom: 10px
+			text-align: center
+			font-size: rem(13px)
 		& > span
 			&::after
 				content: ':'
@@ -28,13 +37,6 @@
 		outline: none
 		position: relative
 		border: 0
-
-		// &::after
-		// 	content: 'v'
-		// 	display: inline-block
-		// 	position: absolute
-		// 	@extend %centering
-		// 	left: 80%
 
 	&__option
 		box-shadow: none
