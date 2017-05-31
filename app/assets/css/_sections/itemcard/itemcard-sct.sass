@@ -2,17 +2,28 @@
 	background-color: #F8F8F8
 	@extend %clearfix
 	padding: 20px 10px
-
+	
 	&__title
 		margin-bottom: rem(20px)
 
+	&__preview
+		padding: 0
+		+responsive('phone')
+			margin-bottom: 20px
+		+responsive('phone-xs')
+			margin-bottom: 20px
 	&__item
 		display: inline-block
 		&_active
 			margin-bottom: 2.5%
 			& .itemcard-sct__pic
 				height: 350px
-
+				+responsive('phone')
+					max-height: 350px
+					height: auto
+				+responsive('phone-xs')
+					max-height: 350px
+					height: auto
 	&__pic
 		overflow: hidden
 		img
@@ -62,16 +73,18 @@
 	&__tablecell
 		width: 50%
 		padding-bottom: 5px
-		&:first-child::after
-			display: inline-block
-			content: ':'
+		&:first-child
+			+responsive('tablet')
+				padding: 0
+				width: 30%
+			+responsive('phone-xs')
+				padding: 0
+				width: 30%
+			&::after
+				display: inline-block
+				content: ':'
 		&:last-child
 			padding-bottom: 0
-		
-	&__table
-		margin-bottom: 13%
-
-	&__pricetag
 
 	&__price
 		color: $pink
@@ -79,11 +92,25 @@
 	&__description
 		margin-top: rem(50px)
 
-
 	&__text
 		font-size: 1rem
 
+	&__row
+		&_price
+			margin: 13% 0
+			+responsive('phone')
+				margin: 6.5% 0
+			+responsive('phone-xs')
+				margin: 6.5% 0
+
 	&__btn
-		margin-top: 13%
 		display: inline-block
 		padding: 5px 0
+
+		&:last-child
+			+responsive('tablet')
+				margin-top: 10px
+			+responsive('phone')
+				margin-top: 10px
+			+responsive('phone-xs')
+				margin-top: 10px
