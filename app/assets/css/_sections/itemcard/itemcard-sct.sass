@@ -38,11 +38,15 @@
 		font-size: 18px
 		display: inline-block
 		margin-right: 10%
+		+responsive('phone-xs')
+			margin-right: 2%
 
 		&_bold
 			font-weight: 800
 		&_mb
 			margin-bottom: rem(40px)
+		&:last-child
+			margin-right: 0
 	&__settings
 		@extend %clearfix
 		margin-bottom: rem(25px)
@@ -98,6 +102,8 @@
 	&__row
 		&_price
 			margin: 13% 0
+			+responsive('tablet')
+				margin: 11% 0
 			+responsive('phone')
 				margin: 6.5% 0
 			+responsive('phone-xs')
