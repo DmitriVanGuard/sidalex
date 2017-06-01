@@ -7,13 +7,13 @@ header.header
 			.header__right.col-lg-18.col-md-18.col-sm-24
 				.header__row.header__row_upper
 					.row.header__flex.header__flex_center
-						.col-lg-9.col-md-9.col-sm-11.col-xs-20.col-xs-offset-2.header__info-row
+						.col-lg-9.col-md-10.col-sm-10.col-xs-20.col-xs-offset-2.header__info-row
 							h2.header__info.header__time
 								|Часы работы: 8:00 - 19:00 Круглосуточно
 						.col-lg-7.col-md-7.col-sm-9.col-xs-20.col-xs-offset-2.header__info-row
 							h2.header__info.header__telephone
 								|Телефон: +7 987 654 32 11
-						a.header__glyph.header__glyph_border.col-lg-offset-5.col-md-offset-5.col-sm-offset-3.col-xs-offset-0(href="")
+						a.header__glyph.header__glyph_border.col-lg-offset-5.col-md-offset-3.col-sm-offset-3.col-xs-offset-0(href="")
 							i(class="fa fa-search" aria-hidden="true")
 						a.header__glyph.header__glyph_shop(href="")
 							span.header__count.header__count_active 1
@@ -27,12 +27,12 @@ header.header
 				.header__row.header__row_lower
 					nav.nav
 						ul.nav__list
-							li.nav__item.uppercase(class=INDEX || CATALOG || ITEMCARD ? 'nav__item_active' : '')
-								a.nav__link(href="") Мужская обувь
+							li.nav__item.uppercase(class=CATALOG || ITEMCARD ? 'nav__item_active' : '')
+								a.nav__link(href="catalog.html") Мужская обувь
 							li.nav__item.uppercase
-								a.nav__link(href="") Женская обувь
+								a.nav__link(href="catalog.html") Женская обувь
 							li.nav__item.uppercase(class=BRAND ? 'nav__item_active' : '')
-								a.nav__link(href="") Бренды
+								a.nav__link(href="brands.html") Бренды
 							li.nav__item.uppercase
 								a.nav__link(href="") Доставка
 							li.nav__item.uppercase

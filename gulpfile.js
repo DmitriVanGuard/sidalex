@@ -133,7 +133,7 @@ gulp.task('styles', function() {
 
 gulp.task('watch', function() {
   gulp.watch(paths.css.all, gulp.series('styles'));
-  gulp.watch('app/img/**/*.*', gulp.series('images'));
+  gulp.watch('app/img/**/*.{png,jpg}', gulp.series('images'));
   gulp.watch(paths.pug.all, gulp.series('build:pug'));
 
 });
